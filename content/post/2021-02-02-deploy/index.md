@@ -12,7 +12,7 @@ tags: []
 Blogdownの公式Documentationでは
 - github
 - Netlify
-の２種類の方法を提案しているが、[Nelify](https://app.netlify.com) を使用する方法を推奨している。
+の２種類の方法を提案しているが、[Netlify](https://app.netlify.com) を使用する方法を推奨している。
 
 
 0. `config.TOML`(私の場合は何故かTOMLではYAMLファイルになっている)の`baseURL`にgithubのレポジトリを入力
