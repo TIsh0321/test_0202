@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.80.0" />
+
+
+<title>test - My own cool website</title>
+<meta property="og:title" content="test - My own cool website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/Isshii20">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">test</h1>
+
+    
+    <span class="article-date">2021-02-02</span>
+    
+
+    <div class="article-content">
+      
+<script src="/2021/02/02/test/index_files/header-attrs/header-attrs.js"></script>
+
+
+<pre class="r"><code>print(rnorm(10))</code></pre>
+<pre><code>##  [1]  0.8793754 -0.9496325 -1.1374232 -0.4217102  0.8699966 -0.8062066
+##  [7]  1.6059119 -1.0453462  0.3362839 -0.9374569</code></pre>
+<pre class="r"><code>x &lt;- rnorm(100)
+y &lt;- rnorm(100, 2, 10)</code></pre>
+<pre class="r"><code>hist(x)</code></pre>
+<p><img src="/2021/02/02/test/index_files/figure-html/plot-1.png" width="672" /></p>
+<pre class="r"><code>plot(x,y)</code></pre>
+<p><img src="/2021/02/02/test/index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>z10 &lt;- rnorm(10,0,100)
+z100 &lt;- rnorm(100,0,100)
+z1000000 &lt;- rnorm(1000000,0,100)
+
+print(summary(z10))</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+## -112.66  -20.06   17.71   45.50  147.32  212.88</code></pre>
+<pre class="r"><code>print(summary(z100))</code></pre>
+<pre><code>##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+## -269.2372  -77.8200   -0.9803    0.5342   64.0571  288.3461</code></pre>
+<pre class="r"><code>print(summary(z1000000))</code></pre>
+<pre><code>##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+## -491.9109  -67.5077   -0.1854   -0.2227   67.1181  452.7824</code></pre>
+<pre class="r"><code>rm(x,y,z,z10,z100,z100000,z1000000,z10000000)</code></pre>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+
