@@ -1,0 +1,35 @@
+---
+title: test
+author: Tomoki Ishikawa
+date: '2021-02-02'
+slug: test
+categories: []
+tags: []
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<pre class="r"><code>print(rnorm(10))</code></pre>
+<pre><code>##  [1]  0.8793754 -0.9496325 -1.1374232 -0.4217102  0.8699966 -0.8062066
+##  [7]  1.6059119 -1.0453462  0.3362839 -0.9374569</code></pre>
+<pre class="r"><code>x &lt;- rnorm(100)
+y &lt;- rnorm(100, 2, 10)</code></pre>
+<pre class="r"><code>hist(x)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/plot-1.png" width="672" /></p>
+<pre class="r"><code>plot(x,y)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>z10 &lt;- rnorm(10,0,100)
+z100 &lt;- rnorm(100,0,100)
+z1000000 &lt;- rnorm(1000000,0,100)
+
+print(summary(z10))</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+## -112.66  -20.06   17.71   45.50  147.32  212.88</code></pre>
+<pre class="r"><code>print(summary(z100))</code></pre>
+<pre><code>##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+## -269.2372  -77.8200   -0.9803    0.5342   64.0571  288.3461</code></pre>
+<pre class="r"><code>print(summary(z1000000))</code></pre>
+<pre><code>##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+## -491.9109  -67.5077   -0.1854   -0.2227   67.1181  452.7824</code></pre>
+<pre class="r"><code>rm(x,y,z,z10,z100,z100000,z1000000,z10000000)</code></pre>

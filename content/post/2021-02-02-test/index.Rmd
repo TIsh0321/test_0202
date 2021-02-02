@@ -1,0 +1,48 @@
+---
+title: test
+author: Tomoki Ishikawa
+date: '2021-02-02'
+slug: test
+categories: []
+tags: []
+---
+
+```{r}
+
+print(rnorm(10))
+
+x <- rnorm(100)
+y <- rnorm(100, 2, 10)
+
+```
+
+```{r, plot}
+
+hist(x)
+
+```
+
+
+```{r}
+
+plot(x,y)
+
+```
+
+```{r}
+
+z10 <- rnorm(10,0,100)
+z100 <- rnorm(100,0,100)
+z1000000 <- rnorm(1000000,0,100)
+
+print(summary(z10))
+print(summary(z100))
+print(summary(z1000000))
+
+
+```
+
+```{r eval=FALSE}
+
+rm(x,y,z,z10,z100,z100000,z1000000,z10000000)
+```
